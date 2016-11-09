@@ -1,0 +1,305 @@
+
+
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-width: 1110px;
+}
+
+
+// HEADER
+
+.page-header {
+  background: linear-gradient(to bottom, #ffffff 90px, #e0f0fe 90px, #ffffff);
+  &__banner {
+    height: 90px;
+    background: #f1f1f1;
+    -webkit-box-shadow: 0 0 5px #999999;
+    box-shadow: 0 0 5px #999999;
+  }
+}
+
+.header-content {
+  width: 1087px;
+  margin: 0 auto;
+
+  &__link {
+    float: left;
+    margin: 29px 45px 25px 46px;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    height: 15px;
+  }
+
+  &__age-control {
+    margin: 17px 1px 0 0;
+
+    float: right;
+    width: 44px;
+    height: 44px;
+
+    font: 22px "UbuntuLight";
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    vertical-align: middle;
+    color: #ff6600;
+  }
+}
+
+.hdr-menu {
+  float: left;
+  &__list {
+    display: block;
+    list-style: none;
+    margin: 0 0 0 19px;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 29px 3px 25px;
+  }
+
+  &__link {
+    color: #333;
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: #f8f6e9;
+      background-image: -webkit-linear-gradient(#fff, #f8f6e9);
+      background-image: -moz-linear-gradient(#fff, #f8f6e9);
+      background-image: linear-gradient(#fff, #f8f6e9);
+      border-color: #e8e2d3;
+      text-decoration: none;
+    }
+  }
+}
+
+.seach-bar {
+  position: relative;
+  clear: both;
+  background: url('../imgs/search_bar.png') no-repeat;
+  min-height: 112px;
+  padding: 1px 0 0 237px;
+
+  &__link {
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+
+    width: 130px;
+    height: 90px;
+    text-indent: -10000px;
+  }
+
+  &__about {
+    color: #cd8412;
+    padding: 0;
+    margin: 9px 9px 4px;
+  }
+
+  &__add-org {
+    display: inline-block;
+    float: right;
+    color: #ee2f03;
+    margin: 2px 46px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.seach-form {
+
+  [name="seach-text"] {
+    color: rgb(153, 153, 102);
+    padding: 8px 30px 8px 15px;
+    width: 675px;
+    outline: none;
+    border: 1px solid #df8d00;
+
+    border-radius: 8px;
+    line-height: 20px;
+
+    -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+                        0 0 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:    inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+                        0 0 2px rgba(0, 0, 0, 0.1);
+    box-shadow:         inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+                        0 0 2px rgba(0, 0, 0, 0.1);
+
+    &:focus{
+      color: #515151;
+    }
+  }
+
+  [type="reset"] {
+    width: 16px;
+    height:15px;
+
+    border: none;
+    background: transparent;
+    vertical-align: middle;
+    outline: none;
+
+    position: relative;
+    right: 29px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0px;
+      width: 12px;
+      height: 3px;
+
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      transition: 0.4s;
+
+      background: #999999;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0px;
+      width: 12px;
+      height: 3px;
+
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      transition: 0.4s;
+
+      background: #999999;
+    }
+
+    &:hover::after,
+    &:hover::before {
+      background: #000;
+    }
+  }
+
+  [type="submit"] {
+    padding: 6px 12px;
+
+    color: #fff;
+    background: #e81913;
+    outline: none;
+    border: 1px solid #d70000;
+    border-radius: 4px;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+
+    background-image: -webkit-linear-gradient( #f23e33, #e81a13);
+    background-image: -moz-linear-gradient( #f23e33 #e81a13);
+    background-image: linear-gradient( #f23e33, #e81a13);
+
+    -webkit-box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5);
+
+
+    &:hover {
+      background-image: none;
+    }
+
+    &:active {
+    -webkit-box-shadow: inset 0 3px 4px -1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 3px 4px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 3px 4px -1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.extra-info {
+  display: block;
+  float: right;
+  list-style: none;
+  margin: -4px 51px 0;
+  padding: 0;
+
+  color: #a29974;
+
+  &__item{
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px 0 9px;
+    vertical-align: bottom;
+    line-height: 30px;
+  }
+
+  &__weather-icon {
+    display: inline-block;
+    height: 30px;
+    padding-left: 30px;
+    background: url('../imgs/weather_icons.png') 0px -1px no-repeat;
+
+    &.weather-tomorrow {
+      background-position: 0 -241px;
+    }
+  }
+}
+
+// HEADER
+
+// MAIN
+
+.page-main {
+  width: 1087px;
+  margin: 0 auto;
+  padding-left: 32px;
+}
+
+.news {
+  width: 800px;
+
+  &__h1 {
+    font: normal 30px 'UbuntuLight';
+  }
+}
+
+// MAIN
+
+.ffml-ubuntu {
+  font-family: 'Ubuntu';
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@font-face {
+    font-family: 'UbuntuLight';
+    src: url('../fonts/ubuntulight/ubuntu-l-webfont.eot');
+    src: url('../fonts/ubuntulight/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntulight/ubuntu-l-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntulight/ubuntu-l-webfont.woff') format('woff'),
+         url('../fonts/ubuntulight/ubuntu-l-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/ubuntu-r-webfont.eot');
+    src: url('../fonts/ubuntu/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu/ubuntu-r-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu/ubuntu-r-webfont.woff') format('woff'),
+         url('../fonts/ubuntu/ubuntu-r-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
