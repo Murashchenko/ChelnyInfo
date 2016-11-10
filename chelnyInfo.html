@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Тренеровка</title>
+  <title>ChelnyInfo</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/chelnyinfo.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__banner"></div>
-    <section class="header-content clearfix">
+    <div class="header-content clearfix">
       <a class="header-content__link" href="#">Набережные Челны</a>
 
       <nav class="hdr-menu">
         <ul class="hdr-menu__list">
           <li class="hdr-menu__item">
             <a class="hdr-menu__link" href="#">Справочник</a>
+          <!--</li> не будет http://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html-->
           <li class="hdr-menu__item">
             <a class="hdr-menu__link" href="#">Новости</a>
           <li class="hdr-menu__item">
@@ -37,28 +38,28 @@
 
       <div class="header-content__age-control"> 16+ </div>
 
-      <section class="seach-bar">
+      <div class="seach-bar">
         <a class="seach-bar__link" href="chelnyinfo.html">бизнес портал Chelny-info</a>
-        <p class="seach-bar__about"><span class="ffml-ubuntu">on-line</span> справочник Татарстана</p>
+        <p class="seach-bar__about">on-line справочник Татарстана</p>
         <form class="seach-form" action="" method="get">
           <input type="text" name="seach-text" autocomplete="off" placeholder="Я ищу...">
           <button type="reset"></button>
           <input type="submit" name="header-form-submit" value="Найти">
         </form>
-      </section><!--seach-bar-->
+      </div>
 
         <a href="#" class="seach-bar__add-org">Добавить организацию</a>
 
       <ul class="extra-info">
-        <li class="extra-info__item">$ 63.57734
-        <li class="extra-info__item"> &#8364; 70.56441
+        <li class="extra-info__item">&#36; 63.5773&#11015;
+        <li class="extra-info__item"> &#8364; 70.5644&#11014;
         <li class="extra-info__item">Сегодня
             <span class="extra-info__weather-icon" title="солнечно">0</span>
         <li class="extra-info__item">Завтра
             <span class="extra-info__weather-icon weather-tomorrow" title="пасмурно">+1</span>
       </ul>
 
-    </section><!--header-content-->
+    </div><!--header-content-->
   </header>
   <main class="page-main">
     <section class="news clearfix">
@@ -68,47 +69,47 @@
         <a class="news-preview__link-by-img" href="#">
           <img class="news-preview__img" src="imgs/barboskiny.jpg" alt="Барбоскины отмечают 5 лет">
         </a>
-        <div class="news-info">
-          <div class="news-info__date">
-            <time datetime="2016-10-27">27.10.2016</time>
-          </div>
-          <div class="news-info__visits"><span>просмотров </span>23</div>
+        <div class="news__info-visits">
+          <span>просмотров </span>23
+        </div>
+        <div class="news__info-date">
+          <time datetime="2016-10-27">27.10.2016</time>
         </div>
         <h1 class="news-preview__h1">
           <a class="news-preview__h1-link" href="#">Барбоскиным - 5 лет!</a>
         </h1>
         <p class="news-preview__short-about">День рождения Барбоскиных!</p>
-      </articel>
+      </article>
 
       <ul class="news-list">
         <li class="news-list__item">
-          <div class="news-info">
-            <div class="news-info__date">
-              <time datetime="2016-10-27">27.10.2016</time>
-            </div>
-            <div class="news-info__visits"><span>просмотров </span>23</div>
+          <div class="news__info-visits">
+            <span>просмотров </span>23
+          </div>
+          <div class="news__info-date">
+            <time datetime="2016-10-27">27.10.2016</time>
           </div>
           <p class="news-list__short-about">
             <a class="news-list__link" href="#">Барбоскиным - 5 лет!</a>
           </p>
 
         <li class="news-list__item">
-          <div class="news-info">
-            <div class="news-info__date">
-              <time datetime="2016-10-27">27.10.2016</time>
-            </div>
-            <div class="news-info__visits"><span>просмотров </span>18</div>
+          <div class="news__info-visits">
+            <span>просмотров </span>18
+          </div>
+          <div class="news__info-date">
+            <time datetime="2016-10-27">27.10.2016</time>
           </div>
           <p class="news-list__short-about">
             <a class="news-list__link" href="#">Доктора Стрэнджа покажут раньше</a>
           </p>
 
         <li class="news-list__item">
-          <div class="news-info">
-            <div class="news-info__date">
-              <time datetime="2016-10-27">26.10.2016</time>
-            </div>
-            <div class="news-info__visits"><span>просмотров </span>47</div>
+          <div class="news__info-visits">
+            <span>просмотров </span>47
+          </div>
+          <div class="news__info-date">
+            <time datetime="2016-10-27">26.10.2016</time>
           </div>
           <p class="news-list__short-about">
             <a class="news-list__link" href="#">Уникальный для России завод открылся
@@ -116,11 +117,11 @@
           </p>
 
         <li class="news-list__item">
-          <div class="news-info">
-            <div class="news-info__date">
-              <time datetime="2016-10-27">25.10.2016</time>
-            </div>
-            <div class="news-info__visits"><span>просмотров </span>48</div>
+          <div class="news__info-visits">
+            <span>просмотров </span>48
+          </div>
+          <div class="news__info-date">
+            <time datetime="2016-10-27">25.10.2016</time>
           </div>
           <p class="news-list__short-about">
             <a class="news-list__link" href="#">Чемпионат мира по борьбе на поясах пройдет
@@ -128,20 +129,20 @@
           </p>
 
         <li class="news-list__item">
-          <div class="news-info">
-            <div class="news-info__date">
-              <time datetime="2016-10-27">25.10.2016</time>
-            </div>
-            <div class="news-info__visits"><span>просмотров </span>57</div>
+          <div class="news__info-visits">
+            <span>просмотров </span>57
+          </div>
+          <div class="news__info-date">
+            <time datetime="2016-10-27">25.10.2016</time>
           </div>
           <p class="news-list__short-about">
-            <a class="news-list__link" href="#">Четыре компании откроют заведения на фудкорде
+            <a class="news-list__link" href="#">Четыре компании откроют заведения на фудкорте
           Sunrise City</a>
           </p>
 
       </ul>
-      <a class="news__more" href="#"></a>
-    </section>
+      <a class="news__more" href="#">cмотреть все</a>
+    </section><!--news-->
   </main>
 </body>
 </html>
